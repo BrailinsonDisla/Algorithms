@@ -4,7 +4,7 @@
  *  Compilation:  make linearSearch
  *  Execution:    ./linearSearch
  *
- *  Implements the linear search algorithm for an given array.
+ *  Implements the linear search algorithm for a given array.
  *
  *  % ./linearSearch
  ******************************************************************************/
