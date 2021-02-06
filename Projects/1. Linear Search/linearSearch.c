@@ -5,6 +5,7 @@
  *  Execution:    ./linearSearch
  *
  *  Implements the linear search algorithm for a given array.
+ *      - returns the index of the first occurrence
  *
  *  % ./linearSearch
  ******************************************************************************/
@@ -16,10 +17,21 @@ int linearSearch(int *arr, int size, int n);
 // entry point for program
 int main(void) {
     // number to find
-    int n = 10;
+    int n = -1;
+
+    while (n < 0) {
+        // ask user for number to find
+        printf("Find (1-10): ");
+
+        // scan input n
+        scanf("%d", &n);
+
+        // clear buffer if not a number
+        while (getchar() != '\n') {};
+    }
 
     // size of the array
-    int size = 10;
+    const int size = 10;
 
     // hardcoded sorted array of integers
     int arr[10] = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
